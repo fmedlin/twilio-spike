@@ -32,7 +32,23 @@
             <groupId>com.twilio</groupId>
             <artifactId>libtwilio-native</artifactId>
             <version>${twilio.version}</version>
+            <classifier>armeabi-v7a</classifier>
+            <scope>runtime</scope>
+            <type>so</type>
+        </dependency>
+        <dependency>
+            <groupId>com.twilio</groupId>
+            <artifactId>libtwilio-native</artifactId>
+            <version>${twilio.version}</version>
             <classifier>mips</classifier>
+            <scope>runtime</scope>
+            <type>so</type>
+        </dependency>
+        <dependency>
+            <groupId>com.twilio</groupId>
+            <artifactId>libtwilio-native</artifactId>
+            <version>${twilio.version}</version>
+            <classifier>x86</classifier>
             <scope>runtime</scope>
             <type>so</type>
         </dependency>

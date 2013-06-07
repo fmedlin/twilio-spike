@@ -11,9 +11,31 @@
 
     <properties>
         <platform.version>4.2.2</platform.version>
+        <twilio.version>1.1.2</twilio.version>
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>com.twilio</groupId>
+            <artifactId>twilioclient-android</artifactId>
+            <version>${twilio.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.twilio</groupId>
+            <artifactId>libtwilio-native</artifactId>
+            <version>${twilio.version}</version>
+            <classifier>armeabi</classifier>
+            <scope>runtime</scope>
+            <type>so</type>
+        </dependency>
+        <dependency>
+            <groupId>com.twilio</groupId>
+            <artifactId>libtwilio-native</artifactId>
+            <version>${twilio.version}</version>
+            <classifier>mips</classifier>
+            <scope>runtime</scope>
+            <type>so</type>
+        </dependency>
         <dependency>
             <groupId>com.google.android</groupId>
             <artifactId>support-v4</artifactId>
